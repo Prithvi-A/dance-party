@@ -8,5 +8,4 @@ interactDancer.prototype.constructor = interactDancer;
 
 interactDancer.prototype.step = function() {
   makeDancer.prototype.step.call(this); //OldStep();
-  // this.$node.toggle();
 };

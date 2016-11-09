@@ -1,6 +1,7 @@
 
 // Creates and returns a new dancer object that can step
 var makeDancer = function(top, left, timeBetweenSteps) {
+ 
   //var this = Object.create(makeDancer.prototype);
   //return this;
   this.timeBetweenSteps = timeBetweenSteps;
@@ -37,15 +38,3 @@ makeDancer.prototype.breakline = function() {
       $("body").width() * Math.random()
   );
 };
-
-// //Create a interact method
-// makeDancer.prototype.interact = function() {
-//   this.$node.addClass('interact');
-//   this.$node.css({'top':400});
-// };
-
-
-
-
-
-

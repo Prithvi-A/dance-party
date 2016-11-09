@@ -8,8 +8,6 @@
 
   zoomingDancer.prototype.step = function() {
     makeDancer.prototype.step.call(this); //OldStep();
-    // this.$node.toggle();
-    // zoom in and out.
   };
 
   zoomingDancer.prototype.interact = function() {
@@ -17,8 +15,3 @@
     this.$node.addClass('interact-zoomingDancer');
     this.$node.css({'top':400});
   };
-
-
-
-
-

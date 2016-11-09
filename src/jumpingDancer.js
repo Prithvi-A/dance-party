@@ -15,4 +15,3 @@ jumpingDancer.prototype.interact = function() {
   this.$node.addClass('interact-jumpingDancer');
   this.$node.css({'top':400});
 };
-
