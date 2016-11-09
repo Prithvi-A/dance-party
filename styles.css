@@ -1,0 +1,189 @@
+body, html{
+  height:100%;
+}
+body{
+  margin: 0px;
+  background-image: url('assets/hofstra-debate-set.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  background-color: #3498db;
+}
+
+body, a:link, a:visited, a:active{
+  text-decoration: none;
+}
+
+/***********/
+/* Buttons */
+/***********/
+
+.btn {
+  background: #3498db;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  margin: 5px 5px;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+/**********/
+/* Navbar */
+/**********/
+
+.title, .addDancerButton{
+  padding: 10px 10px;
+  float: right;
+}
+
+.lineup-btn, .breakline-btn, .interact-btn {
+  padding:10px 10px;
+  float: left;
+}
+
+.topbar{
+  height:50px;
+  background-color: #FF4136;
+}
+
+.title{
+  background-color: #777;
+}
+
+/***********/
+/* Dancers */
+/***********/
+
+.dancer{
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background-image: url('assets/hillary_headshot.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.dancer:hover {
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+/*.dancerBody {
+  width:100px;
+  height: 300px;
+  background-image: url('assets/chicken.gif');
+  background-repeat: no-repeat;
+}*/
+
+.donald {
+  width: 100px;
+  height: 100px;
+  background-image: url('assets/donald_headshot.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.jumpy {
+  background-color: red;
+  animation: beat 3s ease infinite alternate, nudge 5s linear infinite alternate;
+  border-radius: 100%;
+}
+
+@keyframes beat {
+  0%, 100% {
+    background-color: red;
+  }
+  50% {
+    background-color: orange;
+  }
+}
+
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 150px);
+  }
+
+  80% {
+    transform: translate(0, -150px);
+  }
+
+}
+
+.zooming_dancer {
+  height: 100px;
+  width: 100px;
+  /*margin: 0 auto;*/
+  animation-name: stretch;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    border-radius: 100%;
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+audio {
+  padding-top: 8px;
+}
+
+.interact {
+ animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(.1);
+  }
+  80% {
+   transform: scale(2.5);
+  }
+  100% {
+    transform: scale(.3);
+  }
+}
+
+.interact-jumpingDancer {
+  animation-name: slideOne;
+}
+
+@keyframes slideOne {
+  0% {right: 0;}
+   100% { left:0; }
+  }
+}
+
+.interact-zoomingDancer {
+  animation-name: slideTwo;
+}
+
+@keyframes slideTwo {
+   100% { right:0; }
+}
